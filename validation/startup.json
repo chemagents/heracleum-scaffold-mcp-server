@@ -1,0 +1,14 @@
+{
+  "fresh_environment": true,
+  "source": "public pinned Git dependency67da192",
+  "check": {
+    "study": "heracleum",
+    "tool_count": 8,
+    "tool": "heracleum2026_dataset_audit",
+    "status": "success",
+    "verified_downloads": 2,
+    "scope": "Actual HTTP MCP smoke check; not a complete paper or CoScientist E2E acceptance"
+  },
+  "shared_core_linux_ci": "https://github.com/chemagents/chem-repro-suite/actions/runs/44370068373",
+  "full_coscientist_report_acceptance": "ongoing"
+}
