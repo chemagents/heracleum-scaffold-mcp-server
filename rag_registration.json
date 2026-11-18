@@ -1,8 +1,0 @@
-[
-  {
-    "name": "heracleum-2026",
-    "url": "http://127.0.0.1:7342/mcp",
-    "timeout": 7200,
-    "description": "Heracleum furanocoumarins IJMS 2026 7947: scaffold chemistry, docking and ADMETlab PCA, scaffold KS separability, random/scaffold surrogate validation, identity-aware candidate tiers and published pose-recovery table analysis. Not the older Plants LD50 study. CV defaults to strict identities; exact published-snapshot replay must be explicitly requested. Returns numerical CSV tables and regenerated figures. Dataset audit distinguishes parsable source graphs from18all-zero archived docking profiles; no geometry or InChI validation is inferred. Existing docking validation also supports a separately labeled public-crystal reconstruction: actual poses, fixed-frame RMSD, explicit receptor-preparation failures and downloadable structures; default remains published Table S1a analysis."
-  }
-]

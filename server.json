@@ -1,0 +1,35 @@
+{
+  "study": "heracleum",
+  "paper_doi": "10.3390/ijms27177947",
+  "dataset_scope": "heracleum_2026",
+  "registry_name": "heracleum-2026",
+  "description": "Heracleum furanocoumarin study: fixed source datasets, identity conflicts, chemical space, docking/toxicity PCA, scaffold permutations, RF/ElasticNet random/scaffold CV and candidate tiers. Distinguish strict identity interpretation from published_snapshot numerical replay. ADMETlab outputs are not measured toxicity; fresh redocking is separate from source-table aggregation.",
+  "transport": "streamable-http",
+  "mcp_path": "/mcp",
+  "artifact_path": "/files/{sha256}.{extension}",
+  "default_port": 7342,
+  "tool_count": 8,
+  "tool_names": [
+    "heracleum2026_chemical_space",
+    "heracleum2026_dataset_audit",
+    "heracleum2026_docking_profile",
+    "heracleum2026_docking_protocol_validation",
+    "heracleum2026_prioritize_candidates",
+    "heracleum2026_scaffold_separability",
+    "heracleum2026_scaffold_transfer",
+    "heracleum2026_toxicity_landscape"
+  ],
+  "smoke_tool": "heracleum2026_dataset_audit",
+  "core_repository": "https://github.com/chemagents/chem-repro-suite",
+  "core_commit": "a2d980330bd90275722d401c6c9ca246a536dd01",
+  "deployment": {
+    "shared_endpoint": null,
+    "status": "not_deployed",
+    "endpoint_supplied_by": "CoScientist deployment operator"
+  },
+  "compatibility_checked_against": "aimclub/CoScientist_dev@900aeae29d77416a798bdf706bc1c6df8d8e1911",
+  "smoke_metrics": {
+    "ds1": 2008,
+    "ds2": 102
+  }
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "heracleum-2026",
+    "url": "http://127.0.0.1:7342/mcp",
+    "description": "Heracleum furanocoumarin study: fixed source datasets, identity conflicts, chemical space, docking/toxicity PCA, scaffold permutations, RF/ElasticNet random/scaffold CV and candidate tiers. Distinguish strict identity interpretation from published_snapshot numerical replay. ADMETlab outputs are not measured toxicity; fresh redocking is separate from source-table aggregation."
+  }
+]
