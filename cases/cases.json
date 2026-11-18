@@ -2,7 +2,7 @@
   {
     "id": "H01",
     "study": "heracleum",
-    "prompt": "Из каких наборов состоит исследование фуранокумаринов Heracleum (IJMS 2026, 27, 7947)? Проверь размеры, пересечения, пригодность для докинга и согласованность идентичности молекул между исходными файлами. Покажи проблемные записи отдельно.",
+    "prompt": "Which datasets make up the Heracleum study (IJMS 2026, 27, 7947)? Recompute sizes, overlaps and docking coverage, audit molecular identity across source files, and list conflicting records separately.",
     "expected_tools": [
       "heracleum2026_dataset_audit"
     ],
@@ -15,7 +15,7 @@
   {
     "id": "H02",
     "study": "heracleum",
-    "prompt": "Насколько химическое пространство фуранокумаринов Heracleum сосредоточено вокруг небольшого числа каркасов? Пересчитай покрытие частыми каркасами отдельно для референсного и природного наборов; отличай число каркасов от числа молекул.",
+    "prompt": "How concentrated is Heracleum chemical space around a few scaffolds? Recompute scaffold coverage separately for the reference and natural sets, distinguishing scaffold counts from molecule counts.",
     "expected_tools": [
       "heracleum2026_chemical_space"
     ],
@@ -28,7 +28,7 @@
   {
     "id": "H03",
     "study": "heracleum",
-    "prompt": "Достаточно ли среднего докинг-скора для описания панели офф-таргетов Heracleum? Воспроизведи PCA, доли дисперсии, нагрузки мишеней и связь с усреднённым скором. Покажи, какая информация теряется.",
+    "prompt": "Is the mean docking score sufficient to describe the Heracleum off-target panel? Recompute PCA, explained variance, target loadings and correlation with the mean score, and explain the information lost by averaging.",
     "expected_tools": [
       "heracleum2026_docking_profile"
     ],
@@ -41,7 +41,7 @@
   {
     "id": "H04",
     "study": "heracleum",
-    "prompt": "Насколько надёжен докинг-протокол Heracleum? Проверь восстановление нативных поз и различение активных и неактивных контролей. Раздели пересчитанные по таблицам показатели, опубликованные значения и результаты нового запуска; исключённые мишени не считай неудачными.",
+    "prompt": "How reliable is the Heracleum docking protocol? Check native-pose recovery and active/inactive discrimination. Distinguish archived-table calculations, paper-reported values and fresh runs; do not count excluded targets as failures.",
     "expected_tools": [
       "heracleum2026_docking_protocol_validation"
     ],
@@ -54,7 +54,7 @@
   {
     "id": "H05",
     "study": "heracleum",
-    "prompt": "Можно ли свести десять прогнозируемых эндпойнтов токсичности Heracleum к одному индексу? Пересчитай распределения, корреляции, PCA и насыщение шкал; объясни, какие эндпойнты плохо подходят для ранжирования.",
+    "prompt": "Can the ten predicted Heracleum toxicity endpoints be reduced to one index? Recompute distributions, correlations, PCA and scale saturation, and explain which endpoints are unsuitable for ranking.",
     "expected_tools": [
       "heracleum2026_toxicity_landscape"
     ],
@@ -67,7 +67,7 @@
   {
     "id": "H06",
     "study": "heracleum",
-    "prompt": "Зависит ли предсказанный профиль Heracleum от каркасного класса? Проведи исходный перестановочный анализ разделимости по всем токсикологическим и докинговым осям с поправкой на множественные сравнения. Покажи размер эффекта и случайное ожидание.",
+    "prompt": "Does the predicted Heracleum profile depend on scaffold class? Reproduce the permutation analysis across all toxicity and docking axes with multiple-testing correction. Return effect sizes and the random expectation.",
     "expected_tools": [
       "heracleum2026_scaffold_separability"
     ],
@@ -80,7 +80,7 @@
   {
     "id": "H07",
     "study": "heracleum",
-    "prompt": "Переносятся ли модели Heracleum на незнакомые каркасы? Воспроизведи Random Forest и ElasticNet для neurotoxicity и eye corrosion при случайной и scaffold-based пятикратной валидации. Для численной сверки используй опубликованные записи и сохранённые группы каркасов. Верни pooled OOF R², RMSE, MAE, 95%-интервалы R² по 1000 bootstrap-повторам, падение R² и проверку пересечения каркасов. Проблемы источника перечисли отдельно.",
+    "prompt": "Do Heracleum models generalize to unfamiliar scaffolds? Reproduce Random Forest and ElasticNet for neurotoxicity and eye corrosion under random and scaffold five-fold validation. Use published-snapshot records and saved scaffold groups. Return pooled OOF R², RMSE, MAE, 95% R² intervals from 1,000 bootstrap repetitions, R² drops and a scaffold-overlap audit. Report source problems separately.",
     "expected_tools": [
       "heracleum2026_scaffold_transfer"
     ],
@@ -94,7 +94,7 @@
   {
     "id": "H08",
     "study": "heracleum",
-    "prompt": "Какие природные фуранокумарины Heracleum приоритетны для экспериментальной проверки? Воспроизведи распределение по Tier из опубликованного снимка, затем отдельно сформируй список с проверенной идентичностью. Покажи критерии для каждой молекулы и отличия между этими двумя списками.",
+    "prompt": "Which natural Heracleum furanocoumarins should be prioritized for experiments? Reproduce published-snapshot tiers, then separately produce the identity-verified list. Return criteria for every compound and differences between the lists.",
     "expected_tools": [
       "heracleum2026_dataset_audit",
       "heracleum2026_prioritize_candidates"
@@ -109,7 +109,7 @@
   {
     "id": "H09",
     "study": "heracleum",
-    "prompt": "Подтверждают ли согласованные каркасы, докинг и ADMET-профили биологическую токсичность Heracleum? Разбери происхождение этих трёх видов свидетельств, их зависимости и какие внешние эксперименты потребовались бы для независимой проверки.",
+    "prompt": "Does agreement between Heracleum scaffolds, docking and ADMET profiles validate biological toxicity? Trace the provenance and dependencies of all three evidence types and identify the external experiments needed for independent validation.",
     "expected_tools": [
       "heracleum2026_dataset_audit",
       "heracleum2026_docking_profile",
