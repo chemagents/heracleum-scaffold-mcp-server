@@ -1,5 +1,5 @@
 {
-  "core_commit": "4be1e94c912db7a2790c831fb01d098ad290a88a",
+  "core_commit": "cf4509ce4da0be3fdc485306031393bb8a4842c5",
   "study": "heracleum",
   "tools": [
     {
@@ -786,7 +786,7 @@
     {
       "name": "heracleum2026_docking_profile",
       "title": null,
-      "description": "Study: Heracleum2026; paper DOI: 10.3390/ijms27177947; dataset: heracleum_2026.\nDoes averaging 44 docking scores hide target-profile information? Recompute PCA, loadings,\nexplained variance, PC1–mean correlation and strong-score counts on the deposited 2055 profiles.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: heracleum2026_docking_profile.json; bind that output to this exact tool name (heracleum2026_docking_profile). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
+      "description": "Study: Heracleum2026; paper DOI: 10.3390/ijms27177947; dataset: heracleum_2026.\nDoes averaging 44 docking scores hide target-profile information? Recompute PCA, loadings,\nexplained variance, PC1\u2013mean correlation and strong-score counts on the deposited 2055 profiles.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: heracleum2026_docking_profile.json; bind that output to this exact tool name (heracleum2026_docking_profile). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "include_figures": {
@@ -2372,7 +2372,7 @@
     {
       "name": "heracleum2026_scaffold_transfer",
       "title": null,
-      "description": "Study: Heracleum2026; paper DOI: 10.3390/ijms27177947; dataset: heracleum_2026.\nDoes a Morgan-fingerprint surrogate transfer to unseen generic scaffolds? Refit RF/ElasticNet\nwith random and GroupKFold CV, OOF metrics and CI. Default both/both completes ALL FOUR model ×\nendpoint combinations and both split schemes in one scientific call; individual selections remain\nsupported. No separate calls are needed for the full comparison. Published snapshot reproduces notebook inputs;\nstrict excludes identity conflicts. Model targets are ADMETlab predictions, not experimental labels.\neye_corrosion is distinct from eye_irritation. Compare absolute scaffold performance together with\nthe random-minus-scaffold R² drop; a smaller drop alone does not establish a more robust model.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: heracleum2026_scaffold_transfer.json; bind that output to this exact tool name (heracleum2026_scaffold_transfer). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
+      "description": "Study: Heracleum2026; paper DOI: 10.3390/ijms27177947; dataset: heracleum_2026.\nDoes a Morgan-fingerprint surrogate transfer to unseen generic scaffolds? Refit RF/ElasticNet\nwith random and GroupKFold CV, OOF metrics and CI. Default both/both completes ALL FOUR model \u00d7\nendpoint combinations and both split schemes in one scientific call; individual selections remain\nsupported. No separate calls are needed for the full comparison. Published snapshot reproduces notebook inputs;\nstrict excludes identity conflicts. Model targets are ADMETlab predictions, not experimental labels.\neye_corrosion is distinct from eye_irritation. Compare absolute scaffold performance together with\nthe random-minus-scaffold R\u00b2 drop; a smaller drop alone does not establish a more robust model.\nReturns ONE complete AnalysisResult JSON object. Suggested direct output name: heracleum2026_scaffold_transfer.json; bind that output to this exact tool name (heracleum2026_scaffold_transfer). Downloadable CSVs and figures are listed inside artifacts; their actual filenames are returned by execution, not guessed in advance. For a comparison mode, all labeled variants belong to this one JSON result.",
       "inputSchema": {
         "properties": {
           "endpoint": {

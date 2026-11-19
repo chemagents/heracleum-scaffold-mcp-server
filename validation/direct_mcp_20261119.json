@@ -1,0 +1,153 @@
+{
+  "date": "2026-11-19",
+  "kind": "direct MCP validation; not CoScientist end-to-end",
+  "core_commit": "cf4509ce4da0be3fdc485306031393bb8a4842c5",
+  "main_run_core_commit": "38a87575952d60b783e1b9120c2320c79f29a345",
+  "calls": [
+    {
+      "tool": "heracleum2026_dataset_audit",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 1.491,
+      "verified_artifacts": 2,
+      "response_sha256": "0c5e29241ba85f78d6101364f01bb7675b63a10868acb496d251b1bbf7af5220"
+    },
+    {
+      "tool": "heracleum2026_chemical_space",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 2.085,
+      "verified_artifacts": 10,
+      "response_sha256": "5281741f58db1de2118599a0d66f572a7ee4fd4b541f962106f7f15b46ab105b"
+    },
+    {
+      "tool": "heracleum2026_docking_profile",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 1.886,
+      "verified_artifacts": 15,
+      "response_sha256": "908e7bfc138c63ee0d476e16028feac7b474eae28b8fcff770b4cf8fd3d13fe0"
+    },
+    {
+      "tool": "heracleum2026_docking_protocol_validation",
+      "arguments": {
+        "mode": "published_table"
+      },
+      "status": "partial",
+      "elapsed_seconds": 0.065,
+      "verified_artifacts": 6,
+      "response_sha256": "85b6ea06643ec2b9489738b0ff32afd5b78d8594b4c20a85be886a4e260b7f3c"
+    },
+    {
+      "tool": "heracleum2026_toxicity_landscape",
+      "arguments": {},
+      "status": "success",
+      "elapsed_seconds": 0.52,
+      "verified_artifacts": 9,
+      "response_sha256": "6edc893dfe00a1c8039d42d6961f52eda706be0597182f3e6e7233b6c041b0dc"
+    },
+    {
+      "tool": "heracleum2026_scaffold_separability",
+      "arguments": {
+        "permutations": 10000
+      },
+      "status": "success",
+      "elapsed_seconds": 17.824,
+      "verified_artifacts": 5,
+      "response_sha256": "bc5dbef88d9159e3926cfe3786f3f684520e3c7382d47997c7da09d14f9badac"
+    },
+    {
+      "tool": "heracleum2026_scaffold_transfer",
+      "arguments": {
+        "identity_policy": "published_snapshot",
+        "bootstrap": 1000
+      },
+      "status": "success",
+      "elapsed_seconds": 122.351,
+      "verified_artifacts": 7,
+      "response_sha256": "d994f5408a3df6be044fa1de94aa71f16a40141c5a9fcf0c92bc3db506fe46f8"
+    },
+    {
+      "tool": "heracleum2026_prioritize_candidates",
+      "arguments": {
+        "identity_policy": "compare"
+      },
+      "status": "success",
+      "elapsed_seconds": 1.854,
+      "verified_artifacts": 37,
+      "response_sha256": "e8ae983c48fe2973e4b09f5b2d048c898988f20ec4bf25393640dbca2e26ec0a"
+    }
+  ],
+  "independent_checks": {
+    "calls": 8,
+    "downloaded_artifacts_verified": 91,
+    "oof_records_verified": 16584,
+    "scaffold_folds_independently_checked": 20,
+    "metrics": [
+      {
+        "model": "RF",
+        "endpoint": "neurotoxicity",
+        "scheme": "random",
+        "r2": 0.644662226192523,
+        "rmse": 0.126708384459417,
+        "mae": 0.086277886420774
+      },
+      {
+        "model": "RF",
+        "endpoint": "neurotoxicity",
+        "scheme": "scaffold",
+        "r2": 0.444449990890841,
+        "rmse": 0.158433218433292,
+        "mae": 0.113320730307014
+      },
+      {
+        "model": "RF",
+        "endpoint": "eye_corrosion",
+        "scheme": "random",
+        "r2": 0.670066743416799,
+        "rmse": 0.141520831147215,
+        "mae": 0.09080190078944
+      },
+      {
+        "model": "RF",
+        "endpoint": "eye_corrosion",
+        "scheme": "scaffold",
+        "r2": 0.307589938025789,
+        "rmse": 0.205016591463894,
+        "mae": 0.137331813168275
+      },
+      {
+        "model": "ElasticNet",
+        "endpoint": "neurotoxicity",
+        "scheme": "random",
+        "r2": 0.31001454891947,
+        "rmse": 0.176565005291389,
+        "mae": 0.132697944445675
+      },
+      {
+        "model": "ElasticNet",
+        "endpoint": "neurotoxicity",
+        "scheme": "scaffold",
+        "r2": 0.19546115176979,
+        "rmse": 0.190659379290544,
+        "mae": 0.146461098593991
+      },
+      {
+        "model": "ElasticNet",
+        "endpoint": "eye_corrosion",
+        "scheme": "random",
+        "r2": 0.356555512495403,
+        "rmse": 0.197634548502037,
+        "mae": 0.144761308093468
+      },
+      {
+        "model": "ElasticNet",
+        "endpoint": "eye_corrosion",
+        "scheme": "scaffold",
+        "r2": 0.16167241718708,
+        "rmse": 0.225587068930374,
+        "mae": 0.16145661854235
+      }
+    ]
+  }
+}
