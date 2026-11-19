@@ -21,7 +21,7 @@
   ],
   "smoke_tool": "heracleum2026_dataset_audit",
   "core_repository": "https://github.com/chemagents/chem-repro-suite",
-  "core_commit": "a2d980330bd90275722d401c6c9ca246a536dd01",
+  "core_commit": "4be1e94c912db7a2790c831fb01d098ad290a88a",
   "deployment": {
     "shared_endpoint": null,
     "status": "not_deployed",
@@ -31,5 +31,11 @@
   "smoke_metrics": {
     "ds1": 2008,
     "ds2": 102
+  },
+  "end_to_end_evaluation": {
+    "status": "ongoing",
+    "upstream_base": "900aeae29d77416a798bdf706bc1c6df8d8e1911",
+    "local_coscientist_patches": true,
+    "unmodified_upstream_certified": false
   }
 }
